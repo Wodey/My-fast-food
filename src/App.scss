@@ -13,6 +13,7 @@ body, html {
 header {
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .navigation {
   padding: 0 30vh;
@@ -88,6 +89,94 @@ header {
     img {
       width: 101vh;
       overflow-x: hidden;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200vh;
+  background:  #ffba55;
+  & > span {
+    font-size: 3em;
+    padding: 13vh 0 5vh 0;
+  }
+  &-table {
+    display: flex;
+    font-size: 1.5em;
+    flex-direction: column;
+    border: 5px solid black;
+    position: relative;
+
+    &-1 {
+      width: 45vh;
+      top: 0;
+      right: 30vh;
+    }
+
+    &-2 {
+      width: 60vh;
+      bottom: 51vh;
+      left: 28vh;
+    }
+
+    &-3 {
+      width: 65vh;
+      bottom: 60vh;
+      right: 40vh;
+    }
+
+    &-4 {
+      bottom: 90vh;
+      width: 40vh;
+      left: 18vh;
+    }
+    &-header {
+      display: grid;
+      grid-template-columns: 1fr 12fr;
+      padding: 0 1vh;
+      border-bottom: 5px solid black;
+
+      span {
+        padding: 2vh;
+
+        &:first-child {
+          display: flex;
+          padding: 1vh 2vh;
+          font-size: 1.3em;
+          border-right: 5px solid black;
+        }
+      }
+    }
+    &-body {
+      display: flex;
+      flex-direction: column;
+      padding: 3vh;
+
+      &-child {
+        padding: 1vh 0;
+      }
+    }
+  }
+  button {
+    position: relative;
+    bottom: 70vh;
+    width: 50vh;
+    padding: 8vh;
+    font-size: 1.5em;
+    font-family: inherit;
+    letter-spacing: 3px;
+    outline: none;
+    cursor: pointer;
+    border: 5px solid black;
+    background: none;
+
+    &:hover {
+      background:#feefc9;
+      transform: scale(1.03);
+      transition: 1s;
     }
   }
 }
