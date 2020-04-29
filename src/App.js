@@ -13,7 +13,9 @@ export default () => {
     <header>
       <Navigation />
     </header>
-    <main></main>
+    <main>
+      <Bienvenidos />
+    </main>
     <footer></footer>
   </>
 };
