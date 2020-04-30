@@ -16,6 +16,7 @@ export default () => {
     <main>
       <Bienvenidos />
       <Menu />
+      <Gallery />
     </main>
     <footer></footer>
   </>
