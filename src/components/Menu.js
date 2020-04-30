@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 
 
 const table = [
@@ -48,20 +48,38 @@ const table = [
   }
 ];
 
-export default () => (
-  <div className="menu">
-    <span>Menu</span>
-    {
-      table.map(t => <div className={`menu-table menu-table-${t.number}`}>
-        <div className="menu-table-header">
-          <span>{t.number}</span>
-          <span>{t.name}</span>
-        </div>
-        <div className="menu-table-body">
-          {t.body.map(c => <span className="menu-table-body-child">{c}</span>)}
-        </div>
-      </div>)
+export default () => {
+  const [transformMenu, setTransformMenu] = useState();
+
+  const onScrollMenu = () => {
+    if(window.scrollY > 2100) {
+      setTransformMenu(true);
+    } else {
+      setTransformMenu(false);
     }
-    <button>Fodora</button>
-  </div>
-);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", onScrollMenu);
+
+    return () => {
+      window.removeEventListener("scroll", onScrollMenu);
+    }
+  })
+  return (
+    <div className={`menu ${transformMenu ? "menu-transform" : ""}`}>
+      <span>Menu</span>
+      {
+        table.map(t => <div className={`menu-table menu-table-${t.number}`}>
+          <div className="menu-table-header">
+            <span>{t.number}</span>
+            <span>{t.name}</span>
+          </div>
+          <div className="menu-table-body">
+            {t.body.map(c => <span className="menu-table-body-child">{c}</span>)}
+          </div>
+        </div>)
+      }
+      <button>Fodora</button>
+    </div>
+  );
+}

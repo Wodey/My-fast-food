@@ -17,18 +17,23 @@ header {
 }
 .navigation {
   padding: 0 30vh;
+  height: 17vh;
   background:#feefc9;
   display: flex;
   justify-content: space-around;
   font-size: 1.3em;
+  transition: 1s;
 
+  &-transform {
+    height: 11vh;
+    transition: 1s;
+  }
   &-logo {
     width: 20vh;
   }
   &-child {
     display: flex;
     justify-content: center;
-    height: 17vh;
     cursor: pointer;
     align-items: center;
     &:hover {
@@ -42,10 +47,10 @@ header {
 }
 
 .bienvenidos {
-  margin-top: 15vh;
+  margin-top: 9vh;
   &-blog1 {
     background-image: url("/mexican-food.jpg");
-    height: 85vh;
+    height: 93vh;
     font-size: 8em;
     font-weight: bold;
     display: flex;
@@ -97,8 +102,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 1s;
   height: 200vh;
   background:  #ffba55;
+  &-transform {
+    background: #9ff69d;
+    transition: 1s;
+  }
   & > span {
     font-size: 3em;
     padding: 13vh 0 5vh 0;
@@ -172,11 +182,11 @@ header {
     cursor: pointer;
     border: 5px solid black;
     background: none;
-
+    transition: .5s;
     &:hover {
       background:#feefc9;
       transform: scale(1.03);
-      transition: 1s;
+      transition: .5s;
     }
   }
 }
