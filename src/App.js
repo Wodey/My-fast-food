@@ -17,6 +17,7 @@ export default () => {
       <Bienvenidos />
       <Menu />
       <Gallery />
+      <Map />
     </main>
     <footer></footer>
   </>
