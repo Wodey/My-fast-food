@@ -66,7 +66,7 @@ export default () => {
     }
   })
   return (
-    <div className={`menu ${transformMenu ? "menu-transform" : ""}`}>
+    <div className={`menu ${transformMenu ? "menu-transform" : ""}`} id="menu">
       <span>Menu</span>
       {
         table.map(t => <div className={`menu-table menu-table-${t.number}`}>

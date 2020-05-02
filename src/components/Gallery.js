@@ -24,17 +24,17 @@ export default () => {
     };
     return (
       <div className="gallery">
-        <img className="gallery-btn-left gallery-btn" src="/left.svg" onClick={handleLeft} />
+        <img className="gallery-btn-left gallery-btn" src="/left.svg" alt="left button" onClick={handleLeft} />
         <div className="gallery-carousel" style={{"transform": `translateX(${-counter * 100}%)`,
                                                   "transition": `${transition}s`}} >
-          <img src="/3.jpg"/>
-          <img src="/4.jpg"/>
-          <img src="/5.jpg"/>
-          <img src="/6.jpg"/>
-          <img src="/7.jpg"/>
-          <img src="/8.jpg"/>
+          <img src="/3.jpg" alt="carousel element" />
+          <img src="/4.jpg" alt="carousel element" />
+          <img src="/5.jpg" alt="carousel element" />
+          <img src="/6.jpg" alt="carousel element" />
+          <img src="/7.jpg" alt="carousel element"/>
+          <img src="/8.jpg" alt="carousel element"/>
         </div>
-        <img className="gallery-btn-right gallery-btn" src="/right.svg" onClick={handleRight} />
+        <img className="gallery-btn-right gallery-btn" src="/right.svg" alt="right button" onClick={handleRight} />
       </div>
   );
 };

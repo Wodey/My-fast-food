@@ -19,10 +19,10 @@ export default () => {
   })
   return (
     <div className={`navigation ${transformNav ? "navigation-transform" : ""}`}>
-      <a className="navigation-child">Bienvenidos</a>
-      <a className="navigation-child">Menu</a>
+      <a className="navigation-child" href="#bienvenidos">Bienvenidos</a>
+      <a className="navigation-child" href="#menu">Menu</a>
       <a className="navigation-child"><img src="/logo.svg" className="navigation-logo"/></a>
-      <a className="navigation-child">Contact</a>
+      <a className="navigation-child" href="#contact">Contact</a>
       <span className="navigation-child">We're open now</span>
     </div>
   );

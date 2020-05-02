@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <div className="bienvenidos">
+  <div className="bienvenidos" id="bienvenidos">
     <div className="bienvenidos-blog1"><span>Mexican streetfood</span></div>
     <div className="bienvenidos-blog2">
       <h1>¡Bienvenidos!</h1>

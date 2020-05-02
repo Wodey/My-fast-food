@@ -19,6 +19,8 @@ export default () => {
       <Gallery />
       <Map />
     </main>
-    <footer></footer>
+    <footer>
+      <Footer />
+    </footer>
   </>
 };
