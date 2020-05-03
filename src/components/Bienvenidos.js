@@ -12,8 +12,8 @@ export default () => (
     </div>
     <div className="bienvenidos-blog3">If you like Mexican streetfood, you will love El Burro.</div>
     <div className="bienvenidos-blog4">
-      <img src="/1.jpg" />
-      <img src="/2.jpg" />
+      <img src="/1.jpg" alt="people eat burittos"/>
+      <img src="/2.jpg" alt="glom shop name in dark"/>
     </div>
   </div>
 );

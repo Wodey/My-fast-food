@@ -1,4 +1,4 @@
-import React,{useState,useRef} from 'react';
+import React,{useState} from 'react';
 
 export default () => {
     const [counter, setCounter] = useState(0);

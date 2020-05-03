@@ -35,7 +35,7 @@ export default () => {
           behavior: 'smooth'
         })
       }}>Menu</a>
-      <a className="navigation-child"><img src="/logo.svg" className="navigation-logo"/></a>
+      <a className="navigation-child" href="/"><img src="/logo.svg" alt="logo" className="navigation-logo"/></a>
       <a className="navigation-child" href="#contact"  onClick={(e) => {
         e.preventDefault();
         window.scroll({
