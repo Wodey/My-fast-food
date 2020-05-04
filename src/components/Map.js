@@ -2,6 +2,7 @@ import React from 'react';
 
 export default () => (
   <div className="map" id="contact">
+    <span>Where you can find us?</span>
     <div className="map-address">
       <img src="/summertime.svg" alt="sun" />
       <span>VISIT US</span>

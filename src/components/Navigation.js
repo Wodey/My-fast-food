@@ -30,7 +30,7 @@ export default () => {
       <a className="navigation-child" href="#menu"  onClick={(e) => {
         e.preventDefault();
         window.scroll({
-          top: 1700,
+          top: 1680,
           left: 0,
           behavior: 'smooth'
         })
@@ -39,7 +39,7 @@ export default () => {
       <a className="navigation-child" href="#contact"  onClick={(e) => {
         e.preventDefault();
         window.scroll({
-          top: 4000,
+          top: 7600,
           left: 0,
           behavior: 'smooth'
         })
